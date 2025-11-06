@@ -21,6 +21,8 @@ namespace TheManager.Context
             Connect Timeout=30;
             Encrypt=True;
             Trust Server Certificate=True;
+             Data Source=.; database= ;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False
+             
              */
             string con = "server = . ; database = themanagerDb;Integrated Security=True; Connect Timeout=30;Encrypt=True;Trust Server Certificate=True; ";
             optionsBuilder.UseSqlServer(con);

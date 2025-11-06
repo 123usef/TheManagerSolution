@@ -8,7 +8,7 @@ namespace TheManager.Models.Auth
 {
     public class UserRole
     {
-        public int Id { get; set; }
+        public int? Id { get; set; }
         public string role { get; set; } // role :user,admin
 
         public ICollection<User> users { get; set; }=new List<User>();

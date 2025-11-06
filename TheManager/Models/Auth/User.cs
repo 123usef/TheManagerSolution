@@ -17,9 +17,11 @@ namespace TheManager.Models.Auth
         public string Password { get; set; }
         public Plan Plan { get; set; } = Plan.free;
 
+
+        //userrole bigint forign key refrences UserRole()
         [ForeignKey(nameof(userRole))]
         public int UserRoleid { get; set; }
-        
+
         public UserRole userRole { get; set; }
 
     }
